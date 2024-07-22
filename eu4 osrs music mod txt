@@ -1,8 +1,47 @@
 # Must be .txt file - contains the conditions for play of the songs added in the .asset file
 
+#Note loading music for initial launch does not appear in these files
+# It is titled maintheme.ogg and plays automatically and is the song: 
 
+################################################
+########## Generic Peace themed songs ##########
+################################################
 
-### Song 2 - Arabian - Arabian 1 ###
+### song 1-1 ###
+song = {
+	name = ""
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = yes
+		}			
+	}
+}
+
+################################################
+########## Generic War themed songs ############
+################################################
+
+### Song 2-1 ###
+song = {
+	name = ""
+	chance = {
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}			
+	}
+}
+
+################################################
+########## Conditional war songs ###############
+################################################
+
+################################################
+########## Desert themed songs #################
+################################################
+
+### Song 3-1 - Arabian - Arabian 1 ###
 # Unlocked in Al Kharid
 song = {
 	name = "Arabian" 
@@ -64,7 +103,7 @@ song = {
 }
 
 
-### Song 2 - Arabian 2 ###
+### Song 3-2 - Arabian 2 ###
 # Unlocked in Al Kharid
 song = {
 	name = "Arabian 2" 
@@ -124,7 +163,8 @@ song = {
 		}
 	}
 }
-### Song 3 - Arabian 3 ###
+
+### Song 3-3 - Arabian 3 ###
 # Unlocked in outside Kalphite Lair
 song = {
 	name = "Arabian 2" 
@@ -184,3 +224,39 @@ song = {
 		}
 	}
 }
+### Song 3-4 - Al Kharid ###
+
+### Song 3-5 - Egypt ###
+
+### Song 3-6 - Bandit Camp ###
+
+### Song 3-7 - Desert Voyage ###
+
+### Song 3-8 - Dynasty ###
+
+### Song 3-9 - Scarab ###
+
+### Song 3-10 - Sunburn ###
+
+
+##################################################
+########## Europe themed songs ###################
+##################################################
+
+##################################################
+########## America Peace themed songs ############
+##################################################
+
+##################################################
+########## Jungle Peace themed songs #############
+##################################################
+
+##################################################
+########## Idea-locked themed songs ##############
+##################################################
+
+##################################################
+########## Crisis themed songs ###################
+##################################################
+
+
