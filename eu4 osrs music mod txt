@@ -3,9 +3,9 @@
 #Note loading music for initial launch does not appear in these files
 # It is titled maintheme.ogg and plays automatically and is the song: 
 
-################################################
-########## Generic Peace themed songs ##########
-################################################
+####################################################
+########## 1.0 Generic Peace themed songs ##########
+####################################################
 
 ### song 1-1 ###
 song = {
@@ -13,13 +13,13 @@ song = {
 	chance = {
 		modifier = {
 			factor = 0
-			is_at_war = yes
+			is_at_war = no
 		}			
 	}
 }
 
 ################################################
-########## Generic War themed songs ############
+########## 2.0 Generic War themed songs ############
 ################################################
 
 ### Song 2-1 ###
@@ -41,6 +41,7 @@ song = {
 ########## Desert themed songs #################
 ################################################
 
+#cultural themed songs
 ### Song 3-1 - Arabian - Arabian 1 ###
 # Unlocked in Al Kharid
 song = {
@@ -228,11 +229,16 @@ song = {
 
 ### Song 3-5 - Egypt ###
 
+### Song 3-6 - Dynasty ###
+
+### Desert songs:
+## owns, any_owneed_province, war_with (Arabia, Ottomans, Mamluks)
+#capital in Desert
+#country tag is Arabia, Ottomans, Mamluks....
+
 ### Song 3-6 - Bandit Camp ###
 
-### Song 3-7 - Desert Voyage ###
-
-### Song 3-8 - Dynasty ###
+### Song 3-8 - Desert Voyage ###
 
 ### Song 3-9 - Scarab ###
 
@@ -242,14 +248,17 @@ song = {
 ##################################################
 ########## Europe themed songs ###################
 ##################################################
+is_at_war = no
 
 ##################################################
 ########## America Peace themed songs ############
 ##################################################
+is_at_war = no
 
 ##################################################
 ########## Jungle Peace themed songs #############
 ##################################################
+is_at_war = no
 
 ##################################################
 ########## Idea-locked themed songs ##############
