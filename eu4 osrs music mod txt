@@ -246,19 +246,48 @@ song = {
 
 
 ##################################################
-########## Europe themed songs ###################
+########## Europe Peace themed songs ###################
 ##################################################
-is_at_war = no
+# capital_scope = { superregion = europe_superregion }
+song = {
+	name = ""
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = no
+			capital_scope = europe_superregion
+		}			
+	}
+}
+#Double check code is correct
 
 ##################################################
 ########## America Peace themed songs ############
 ##################################################
-is_at_war = no
+# capital_scope = { superregion = north_america_superregion, central_and_south_america_regions }
+# check is the , is the correct symbol for multiple regions in C
+### Song x-1 - 7th Realm ###
+song = {
+	name = "7th Realm"
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}			
+	}
+}
 
 ##################################################
 ########## Jungle Peace themed songs #############
-##################################################
-is_at_war = no
+song = {
+	name = ""
+	chance = {
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}			
+	}
+}
 
 ##################################################
 ########## Idea-locked themed songs ##############
