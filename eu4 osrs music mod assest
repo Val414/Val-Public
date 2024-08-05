@@ -1,18 +1,55 @@
 # Assest folder, adds the songs to the player. Conditions for the songs are in teh txt folder
 
+### Song 3-1 - Arabian ###
 music = {
 	name = "Arabian"
 	file = "Arabian.ogg"
 }
 
+### Song 3-2 - Arabian2 ###
 music = {
 	name = "Arabian2"
 	file = "Arabian2.ogg"
 }
 
+### Song 3-3 - Arabian3 ###
 music = {
 	name = "Arabian3"
 	file = "Arabian3.ogg"
 }
 
-#henlo git
+### Song 3-4 - Al Kharid ###
+music = {
+	name = "Al Kharid"
+	file = "Al Kharid.ogg"
+}
+
+### Song 3-5 - Egypt ###
+music = {
+	name = "Egypt"
+	file = "Egypt.ogg"
+}
+
+### Song 3-6 - Dynasty ###
+music = {
+	name = "Dynasty"
+	file = "Dynasty.ogg"
+}
+
+### Song 3-7 - Bandit Camp ###
+music = {
+	name = "Bandit Camp"
+	file = "Bandit Camp.ogg"
+}
+
+### Song 3-8 - Desert Voyage ###
+music = {
+	name = "Desert Voyage"
+	file = "Desert Voyage.ogg"
+}
+
+### Song 3-9 - Sunburn ###
+music = {
+	name = "Desert Voyage"
+	file = "Desert Voyage.ogg"
+}

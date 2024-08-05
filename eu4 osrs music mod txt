@@ -62,6 +62,8 @@ song = {
 						}
 						OR = { 
 							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
 						}
 					}
 					#own 10 provinces in a non-accepted culture group
@@ -69,6 +71,8 @@ song = {
 						value = 10
 						OR = { 
 							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
 						}
 					}
 					#WAR PARTICIPANT MEETS REQUIREMENTS
@@ -86,6 +90,8 @@ song = {
 								}
 								OR = { 
 									culture_group = levantine
+								culture_group = iranian
+								culture_group = maghrebi
 								}
 							}
 							#10 cultured provinces
@@ -93,6 +99,8 @@ song = {
 								value = 10
 									OR = { 
 									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
 								}
 							}
 						}
@@ -124,6 +132,8 @@ song = {
 						}
 						OR = { 
 							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
 						}
 					}
 					#own 10 provinces in a non-accepted culture group
@@ -131,6 +141,8 @@ song = {
 						value = 10
 						OR = { 
 							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
 						}
 					}
 					#WAR PARTICIPANT MEETS REQUIREMENTS
@@ -148,6 +160,8 @@ song = {
 								}
 								OR = { 
 									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
 								}
 							}
 							#10 cultured provinces
@@ -155,6 +169,8 @@ song = {
 								value = 10
 									OR = { 
 									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
 								}
 							}
 						}
@@ -165,11 +181,13 @@ song = {
 	}
 }
 
+
+
 ### Song 3-3 - Arabian 3 ###
 # Unlocked in outside Kalphite Lair
 song = {
-	name = "Arabian 2" 
-	chance = {
+	name = "Arabian 3" 
+		chance = {
 		modifier = { factor = 1 }
 		modifier = { factor = 0 is_at_war = no } 
 		modifier = {
@@ -185,6 +203,8 @@ song = {
 						}
 						OR = { 
 							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
 						}
 					}
 					#own 10 provinces in a non-accepted culture group
@@ -192,6 +212,8 @@ song = {
 						value = 10
 						OR = { 
 							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
 						}
 					}
 					#WAR PARTICIPANT MEETS REQUIREMENTS
@@ -209,6 +231,8 @@ song = {
 								}
 								OR = { 
 									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
 								}
 							}
 							#10 cultured provinces
@@ -216,6 +240,8 @@ song = {
 								value = 10
 									OR = { 
 									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
 								}
 							}
 						}
@@ -225,11 +251,210 @@ song = {
 		}
 	}
 }
+
 ### Song 3-4 - Al Kharid ###
+song = {
+	name = "Al Kharid" 
+		chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 is_at_war = no } 
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					#own any province in an accepted culture group
+					num_of_owned_provinces_with = {
+						value = 1
+						OR = { 
+							has_owner_accepted_culture = yes
+							has_owner_culture = yes
+						}
+						OR = { 
+							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
+						}
+					}
+					#own 10 provinces in a non-accepted culture group
+					num_of_owned_provinces_with = {
+						value = 10
+						OR = { 
+							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
+						}
+					}
+					#WAR PARTICIPANT MEETS REQUIREMENTS
+					any_known_country = {
+						is_in_war = {
+							participants = ROOT
+						}
+						OR = {
+							#1 accepted culture province
+							num_of_owned_provinces_with = {
+								value = 1
+								OR = { 
+									has_owner_accepted_culture = yes
+									has_owner_culture = yes
+								}
+								OR = { 
+									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
+								}
+							}
+							#10 cultured provinces
+							num_of_owned_provinces_with = {
+								value = 10
+									OR = { 
+									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 ### Song 3-5 - Egypt ###
+song = {
+	name = "Egypt" 
+		chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 is_at_war = no } 
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					#own any province in an accepted culture group
+					num_of_owned_provinces_with = {
+						value = 1
+						OR = { 
+							has_owner_accepted_culture = yes
+							has_owner_culture = yes
+						}
+						OR = { 
+							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
+						}
+					}
+					#own 10 provinces in a non-accepted culture group
+					num_of_owned_provinces_with = {
+						value = 10
+						OR = { 
+							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
+						}
+					}
+					#WAR PARTICIPANT MEETS REQUIREMENTS
+					any_known_country = {
+						is_in_war = {
+							participants = ROOT
+						}
+						OR = {
+							#1 accepted culture province
+							num_of_owned_provinces_with = {
+								value = 1
+								OR = { 
+									has_owner_accepted_culture = yes
+									has_owner_culture = yes
+								}
+								OR = { 
+									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
+								}
+							}
+							#10 cultured provinces
+							num_of_owned_provinces_with = {
+								value = 10
+									OR = { 
+									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 ### Song 3-6 - Dynasty ###
+song = {
+	name = "Dynasty" 
+		chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 is_at_war = no } 
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					#own any province in an accepted culture group
+					num_of_owned_provinces_with = {
+						value = 1
+						OR = { 
+							has_owner_accepted_culture = yes
+							has_owner_culture = yes
+						}
+						OR = { 
+							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
+						}
+					}
+					#own 10 provinces in a non-accepted culture group
+					num_of_owned_provinces_with = {
+						value = 10
+						OR = { 
+							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
+						}
+					}
+					#WAR PARTICIPANT MEETS REQUIREMENTS
+					any_known_country = {
+						is_in_war = {
+							participants = ROOT
+						}
+						OR = {
+							#1 accepted culture province
+							num_of_owned_provinces_with = {
+								value = 1
+								OR = { 
+									has_owner_accepted_culture = yes
+									has_owner_culture = yes
+								}
+								OR = { 
+									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
+								}
+							}
+							#10 cultured provinces
+							num_of_owned_provinces_with = {
+								value = 10
+									OR = { 
+									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 ### Desert songs:
 ## owns, any_owneed_province, war_with (Arabia, Ottomans, Mamluks)
@@ -237,12 +462,208 @@ song = {
 #country tag is Arabia, Ottomans, Mamluks....
 
 ### Song 3-6 - Bandit Camp ###
+song = {
+	name = "Bandit Camp" 
+		chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 is_at_war = no } 
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					#own any province in an accepted culture group
+					num_of_owned_provinces_with = {
+						value = 1
+						OR = { 
+							has_owner_accepted_culture = yes
+							has_owner_culture = yes
+						}
+						OR = { 
+							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
+						}
+					}
+					#own 10 provinces in a non-accepted culture group
+					num_of_owned_provinces_with = {
+						value = 10
+						OR = { 
+							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
+						}
+					}
+					#WAR PARTICIPANT MEETS REQUIREMENTS
+					any_known_country = {
+						is_in_war = {
+							participants = ROOT
+						}
+						OR = {
+							#1 accepted culture province
+							num_of_owned_provinces_with = {
+								value = 1
+								OR = { 
+									has_owner_accepted_culture = yes
+									has_owner_culture = yes
+								}
+								OR = { 
+									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
+								}
+							}
+							#10 cultured provinces
+							num_of_owned_provinces_with = {
+								value = 10
+									OR = { 
+									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 ### Song 3-8 - Desert Voyage ###
+song = {
+	name = "Desert Voyage" 
+		chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 is_at_war = no } 
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					#own any province in an accepted culture group
+					num_of_owned_provinces_with = {
+						value = 1
+						OR = { 
+							has_owner_accepted_culture = yes
+							has_owner_culture = yes
+						}
+						OR = { 
+							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
+						}
+					}
+					#own 10 provinces in a non-accepted culture group
+					num_of_owned_provinces_with = {
+						value = 10
+						OR = { 
+							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
+						}
+					}
+					#WAR PARTICIPANT MEETS REQUIREMENTS
+					any_known_country = {
+						is_in_war = {
+							participants = ROOT
+						}
+						OR = {
+							#1 accepted culture province
+							num_of_owned_provinces_with = {
+								value = 1
+								OR = { 
+									has_owner_accepted_culture = yes
+									has_owner_culture = yes
+								}
+								OR = { 
+									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
+								}
+							}
+							#10 cultured provinces
+							num_of_owned_provinces_with = {
+								value = 10
+									OR = { 
+									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
-### Song 3-9 - Scarab ###
-
-### Song 3-10 - Sunburn ###
+### Song 3-9 - Sunburn ###
+song = {
+	name = "Sunburn" 
+		chance = {
+		modifier = { factor = 1 }
+		modifier = { factor = 0 is_at_war = no } 
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					#own any province in an accepted culture group
+					num_of_owned_provinces_with = {
+						value = 1
+						OR = { 
+							has_owner_accepted_culture = yes
+							has_owner_culture = yes
+						}
+						OR = { 
+							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
+						}
+					}
+					#own 10 provinces in a non-accepted culture group
+					num_of_owned_provinces_with = {
+						value = 10
+						OR = { 
+							culture_group = levantine
+							culture_group = iranian
+							culture_group = maghrebi
+						}
+					}
+					#WAR PARTICIPANT MEETS REQUIREMENTS
+					any_known_country = {
+						is_in_war = {
+							participants = ROOT
+						}
+						OR = {
+							#1 accepted culture province
+							num_of_owned_provinces_with = {
+								value = 1
+								OR = { 
+									has_owner_accepted_culture = yes
+									has_owner_culture = yes
+								}
+								OR = { 
+									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
+								}
+							}
+							#10 cultured provinces
+							num_of_owned_provinces_with = {
+								value = 10
+									OR = { 
+									culture_group = levantine
+									culture_group = iranian
+									culture_group = maghrebi
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 
 ##################################################
